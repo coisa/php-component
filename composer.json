@@ -19,6 +19,7 @@
         "php": "^7.1"
     },
     "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*",
         "phpunit/phpunit": "^6.2"
     },
     "autoload": {
@@ -30,5 +31,9 @@
         "psr-4": {
             "Test\\": "tests/"
         }
+    },
+    "scripts": {
+        "doc": "phpdoc -d src -t docs --template responsive-twig",
+        "test": "phpunit"
     }
 }

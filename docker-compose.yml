@@ -1,8 +1,24 @@
-on: '3'
+version: '3'
 services:
-  web:
+  examples:
     build: .
+    image: coisa/composer-skeleton
+    command: php -S 0.0.0.0:80 -t /app/examples
     ports:
       - 8080:80
+    volumes:
+      - ./:/app
+
+  doc:
+    build: .
+    image: coisa/composer-skeleton
+    command: run doc
+    volumes:
+      - ./:/app
+
+  tests:
+    build: .
+    image: coisa/composer-skeleton
+    command: run tests
     volumes:
       - ./:/app

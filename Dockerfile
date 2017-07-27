@@ -11,5 +11,3 @@ RUN composer install \
     --optimize-autoloader; \
     \
     rm composer.lock
-
-CMD ["php", "-S", "0.0.0.0:8888", "-t", "/app"]
