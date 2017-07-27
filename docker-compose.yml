@@ -18,6 +18,14 @@ services:
     volumes:
       - ./:/app
 
+  sniff:
+    build: .
+    image: coisa/composer-skeleton
+    command: composer run sniff
+    env_file: .env
+    volumes:
+      - ./:/app
+
   tests:
     build: .
     image: coisa/composer-skeleton
