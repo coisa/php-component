@@ -12,13 +12,13 @@ services:
   doc:
     build: .
     image: coisa/composer-skeleton
-    command: run doc
+    command: composer run doc
     volumes:
       - ./:/app
 
   tests:
     build: .
     image: coisa/composer-skeleton
-    command: run tests
+    command: composer run tests
     volumes:
       - ./:/app
