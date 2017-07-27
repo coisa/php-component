@@ -4,6 +4,7 @@ services:
     build: .
     image: coisa/composer-skeleton
     command: php -S 0.0.0.0:80 -t /app/examples
+    env_file: .env
     ports:
       - 8080:80
     volumes:
@@ -13,6 +14,7 @@ services:
     build: .
     image: coisa/composer-skeleton
     command: composer run doc
+    env_file: .env
     volumes:
       - ./:/app
 
@@ -20,5 +22,6 @@ services:
     build: .
     image: coisa/composer-skeleton
     command: composer run tests
+    env_file: .env
     volumes:
       - ./:/app
