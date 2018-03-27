@@ -6,6 +6,7 @@
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcoisa%2Fcomposer-skeleton.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcoisa%2Fcomposer-skeleton?ref=badge_shield)
 
 ## Credits
 
@@ -28,3 +29,6 @@ Apache License Version 2.0 (Apache-2.0). Please see [License File](LICENSE.md) f
 [link-code-quality]: https://scrutinizer-ci.com/g/coisa/composer-skeleton
 [link-downloads]: https://packagist.org/packages/coisa/composer-skeleton
 [link-author]: https://github.com/coisa
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcoisa%2Fcomposer-skeleton.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcoisa%2Fcomposer-skeleton?ref=badge_large)
