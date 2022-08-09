@@ -64,7 +64,7 @@
         "cs-check": "php-cs-fixer fix --dry-run --diff",
         "cs-fix": "php-cs-fixer fix",
         "lint": "parallel-lint --exclude vendor .",
-        "sniff": "phpcs --ignore=vendor/ . --standard=PSR12",
+        "sniff": "phpcs",
         "test": "phpunit --color=always --testdox",
         "test-watch": "phpunit-watcher watch"
     }
