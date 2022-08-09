@@ -1,29 +1,37 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * This file is part of the coisa/composer-skeleton
+ * This file is part of coisa/composer-skeleton.
  *
- * Defines an example class with simple, dummy and useless tests
+ * This source file is subject to the license that is bundled
+ * with this source code in the file LICENSE.
  *
- * @copyright Copyright (c) Felipe Sayão Lobato Abreu <contato@felipeabreu.com.br>
- * @license https://www.apache.org/licenses/LICENSE-2.0 Apache License 2.0
- * @link https://packagist.org/packages/coisa/composer-skeleton Packagist
- * @link https://github.com/coisa/composer-skeleton GitHub
+ * @link      https://github.com/coisa/composer-skeleton
+ * @copyright Copyright (c) 2022 Felipe Sayão Lobato Abreu <github@mentor.dev.br>
+ * @license   https://opensource.org/licenses/MIT MIT License
  */
-namespace Test;
+
+namespace CoiSA\Component;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class DummyTest
+ * Class DummyTest.
+ *
  * @package Test
+ *
+ * @internal
+ * @coversNothing
  */
-class DummyTest extends TestCase
+final class DummyTest extends TestCase
 {
     /**
-     * Test if true is really true (duh!)
+     * Test if true is really true (duh!).
      */
-    public function testAlwaysTrue()
+    public function testAlwaysTrue(): void
     {
-        $this->assertTrue(true);
+        static::assertTrue(true);
     }
 }
