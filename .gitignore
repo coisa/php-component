@@ -1,7 +1,8 @@
-/.idea/
-/vendor/
-/docs/api/
-composer.phar
+.idea/
+coverage/
+vendor/
+*.cache
 composer.lock
+composer.phar
 phpDocumentor.phar
 .env
