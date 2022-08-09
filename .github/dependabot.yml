@@ -4,8 +4,31 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "Composer"
+      include: "scope"
+    labels:
+      - "composer"
+      - "dependencies"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "GitHub Actions"
+      include: "scope"
+    labels:
+      - "github-actions"
+      - "continuous-integration"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "Docker"
+      include: "scope"
+    labels:
+      - "docker"
+      - "continuous-integration"
