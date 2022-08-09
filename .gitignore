@@ -1,4 +1,6 @@
 .idea/
+docs/coverage/
+docs/html/
 vendor/
 *.cache
 composer.lock

@@ -1,0 +1,14 @@
+docs_dir: docs/book
+repo_url: https://github.com/coisa/composer-skeleton
+theme:
+  name: readthedocs
+  highlightjs: true
+  logo:
+  analytics:
+    gtag: G-ABC123
+site_dir: docs/html
+site_name: CoiSA Component
+site_description: CoiSA Component Description
+nav:
+  - Home: index.md
+  - Introduction: v1/intro.md

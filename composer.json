@@ -1,6 +1,6 @@
 {
     "name": "coisa/composer-skeleton",
-    "description": "Skeleton for composer library",
+    "description": "CoiSA Component Description",
     "license": "MIT",
     "type": "library",
     "authors": [
