@@ -6,41 +6,66 @@
     "authors": [
         {
             "name": "Felipe Sayão Lobato Abreu",
-            "email": "contato@felipeabreu.com.br"
+            "email": "github@mentor.dev.br"
         }
     ],
-    "minimum-stability": "stable",
     "support": {
-        "email": "contato@felipeabreu.com.br",
-        "source": "https://github.com/coisa/composer-skeleton",
-        "issues": "https://github.com/coisa/composer-skeleton/issues"
+        "email": "github@mentor.dev.br",
+        "issues": "https://github.com/coisa/composer-skeleton/issues",
+        "source": "https://github.com/coisa/composer-skeleton"
     },
     "require": {
-        "php": "^7.1"
+        "php": "^7.4 || ^8.0"
     },
     "require-dev": {
-        "phpdocumentor/phpdocumentor": "2.*",
-        "phpunit/phpunit": "^6.2",
-        "squizlabs/php_codesniffer": "^3.0"
+        "coisa/php-cs-fixer": "^2.1",
+        "jangregor/phpstan-prophecy": "^1.0",
+        "php-parallel-lint/php-console-highlighter": "^1.0",
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan-phpunit": "^1.1",
+        "phpunit/phpunit": "^9.5",
+        "spatie/phpunit-watcher": "^1.23",
+        "squizlabs/php_codesniffer": "^3.7"
     },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "MyNamespace\\": "src/"
+            "CoiSA\\Component\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Test\\": "tests/"
+            "CoiSA\\Component\\": "tests/"
         }
     },
-    "scripts": {
-        "doc": "phpdoc -d src -t docs --template responsive-twig",
-        "sniff": "phpcs src/ --standard=PSR2 --report=summary",
-        "test": "phpunit"
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "prefer-stable": true,
+        "sort-packages": true
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.x-dev"
         }
+    },
+    "scripts": {
+        "analyse": "phpstan analyse",
+        "check": [
+            "@lint",
+            "@test",
+            "@sniff",
+            "@cs-check",
+            "@analyse"
+        ],
+        "cs-check": "php-cs-fixer fix --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix",
+        "lint": "parallel-lint --exclude vendor .",
+        "sniff": "phpcs --ignore=vendor/ . --standard=PSR12",
+        "test": "phpunit --color=always --testdox",
+        "test-watch": "phpunit-watcher watch"
     }
 }
