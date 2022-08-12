@@ -1,0 +1,9 @@
+# Configuration for https://github.com/SvanBoxel/delete-merged-branch
+exclude:
+  - dev
+  - development
+  - feature-*
+  - qa
+  - v*
+  - '*-dev'
+delete_closed_pr: true

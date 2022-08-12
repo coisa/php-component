@@ -1,0 +1,29 @@
+# Configuration for https://probot.github.io/apps/todo
+todo:
+  autoAssign: false
+  blobLines: 10
+  caseSensitive: false
+  keyword: "@TODO"
+
+# Configuration for https://probot.github.io/apps/welcome
+# @TODO: Add welcome messages
+
+# Configuration for https://github.com/behaviorbot/sentiment-bot
+sentimentBotToxicityThreshold: .7
+sentimentBotReplyComment: >
+  Please be sure to review the code of conduct and be respectful of other users. cc/ @hiimbex
+
+# Configuration for https://github.com/behaviorbot/request-info
+requestInfoReplyComment: >
+  We would appreciate it if you could provide us with more info about this issue/pr!
+requestInfoDefaultTitles:
+  - update readme.md
+  - updates
+requestInfoLabelToAdd: needs-more-info
+
+# Configuration for https://github.com/behaviorbot/update-docs
+updateDocsComment: >
+  Thanks for opening this pull request! The maintainers of this repository would appreciate it if you would update some of our documentation based on your changes.
+updateDocsWhiteList:
+  - bug
+  - chore
