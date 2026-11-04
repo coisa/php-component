@@ -28,7 +28,7 @@ Apache License Version 2.0 (Apache-2.0). Please see [License File](LICENSE.md) f
 [link-scrutinizer]: https://scrutinizer-ci.com/g/coisa/composer-skeleton/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/coisa/composer-skeleton
 [link-downloads]: https://packagist.org/packages/coisa/composer-skeleton
-[link-author]: https://github.com/coisa
+[link-author]: https://github.com/artificenerd
 
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcoisa%2Fcomposer-skeleton.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcoisa%2Fcomposer-skeleton?ref=badge_large)

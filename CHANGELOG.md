@@ -22,5 +22,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Security
 - Nothing
 
-[Unreleased]: https://github.com/coisa/composer-skeleton/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/artificenerd/composer-skeleton/compare/1.0.0...HEAD
 [1.0.0]: https://github.com/olivierlacan/keep-a-changelog/compare/1.0.0...0.1.0

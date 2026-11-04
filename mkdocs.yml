@@ -1,5 +1,5 @@
 docs_dir: docs/book
-repo_url: https://github.com/coisa/composer-skeleton
+repo_url: https://github.com/artificenerd/composer-skeleton
 theme:
   name: readthedocs
   highlightjs: true

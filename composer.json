@@ -11,8 +11,8 @@
     ],
     "support": {
         "email": "github@mentor.dev.br",
-        "issues": "https://github.com/coisa/composer-skeleton/issues",
-        "source": "https://github.com/coisa/composer-skeleton"
+        "issues": "https://github.com/artificenerd/composer-skeleton/issues",
+        "source": "https://github.com/artificenerd/composer-skeleton"
     },
     "require": {
         "php": "^7.4 || ^8.0"

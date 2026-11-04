@@ -8,7 +8,7 @@ declare(strict_types=1);
  * This source file is subject to the license that is bundled
  * with this source code in the file LICENSE.
  *
- * @link      https://github.com/coisa/composer-skeleton
+ * @link      https://github.com/artificenerd/composer-skeleton
  * @copyright Copyright (c) 2022 Felipe Sayão Lobato Abreu <github@mentor.dev.br>
  * @license   https://opensource.org/licenses/MIT MIT License
  */
